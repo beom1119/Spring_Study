@@ -1,7 +1,18 @@
 package hello.core.member;
 
-public class Grade {
 
+public enum Grade {
 
+    VIP,NORMAL;
 
+    private String Grade;
+
+    Grade(String grade) {
+        Grade = grade;
+    }
+
+    Grade()
+    {
+
+    }
 }
