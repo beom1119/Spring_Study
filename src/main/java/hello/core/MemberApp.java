@@ -9,8 +9,10 @@ public class MemberApp {
 
 
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
-        memberService.join(new Member(1L,"memberA", Grade.VIP));
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+
+        Member member = new Member(1L,"memberA",Grade.VIP);
     }
 
 }
